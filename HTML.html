@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Papelería DAMAE L.M.</title>
+
+    <link rel="stylesheet" href="CCS.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>PAPELERÍA DAMAE L.M.</h1>
+        <p>¡Tu papelería favorita!</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#carrito">Mi carrito</a>
+    </nav>
+
+    <main id="inicio">
+
+        <section class="bienvenida">
+            <h2>¡Todo lo que necesitas en un solo lugar!</h2>
+            <p>Encuentra tus productos escolares, de oficina y mucho más.</p>
+        </section>
+
+        
+<section id="categorias">
+    <h2>Nuestras categorías</h2>
+    <p>Encuentra fácilmente lo que necesitas.</p>
+
+    <div class="lista-categorias">
+        <button class="categoria" onclick="filtrarCategoria('Escolares')">
+            <span>🎒</span>
+            <h3>Escolares</h3>
+            <p>Cuadernos, lápices y colores</p>
+        </button>
+
+        <button class="categoria" onclick="filtrarCategoria('Oficina')">
+            <span>📎</span>
+            <h3>Oficina</h3>
+            <p>Organización y papelería</p>
+        </button>
+
+        <button class="categoria" onclick="filtrarCategoria('Miscelánea')">
+            <span>🎨</span>
+            <h3>Miscelánea</h3>
+            <p>Artículos variados</p>
+        </button>
+    </div>
+</section>
+
+        
+<section id="productos">
+    <h2>Productos destacados</h2>
+
+    <div class="lista-productos">
+
+        <div class="producto" data-categoria="Escolares">
+            <div class="imagen-producto">📒</div>
+            <h3>Cuaderno argollado</h3>
+            <p>Ideal para tus apuntes y tareas.</p>
+            <p class="precio">$8.000</p>
+            <button class="agregar-carrito">Añadir al carrito</button>
+        </div>
+
+        <div class="producto" data-categoria="Escolares">
+            <div class="imagen-producto">✏️</div>
+            <h3>Lápiz negro</h3>
+            <p>Perfecto para estudiar y escribir.</p>
+            <p class="precio">$1.500</p>
+            <button class="agregar-carrito">Añadir al carrito</button>
+        </div>
+
+        <div class="producto" data-categoria="Escolares">
+            <div class="imagen-producto">🖍️</div>
+            <h3>Colores x 12</h3>
+            <p>Para darle vida a tus trabajos.</p>
+            <p class="precio">$6.000</p>
+            <button class="agregar-carrito">Añadir al carrito</button>
+        </div>
+
+        <div class="producto" data-categoria="Escolares">
+            <div class="imagen-producto">📏</div>
+            <h3>Regla de 30 cm</h3>
+            <p>Útil para tus actividades escolares.</p>
+            <p class="precio">$2.000</p>
+            <button class="agregar-carrito">Añadir al carrito</button>
+        </div>
+
+    </div>
+</section>
+
+
+        <section id="carrito">
+    <h2>Mi carrito 🛒</h2>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <h3 id="total-carrito">Total: $0</h3>
+
+    <button id="vaciar-carrito">Vaciar carrito</button>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Papelería DAMAE L.M.</p>
+    </footer>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
+
